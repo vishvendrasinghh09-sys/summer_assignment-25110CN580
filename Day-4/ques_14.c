@@ -2,27 +2,19 @@
 #include<stdio.h>
 int main()
 {
-    int n,a=0,b=1,c,i;
-    printf("\n which term to print \n");
+    int n,i,a=0,b=1,c;
+    printf("enter the limit:");
     scanf("%d",&n);
-    if(n<0)
-    {printf("invalid input");}
 
-    elseif(n==1)
+    printf("the %d number in the fibonacci series is :",n);
+
+    for(i=1;i<=n;i++)
     {
-        printf("%d", a);}
-
-    elseif(n==2)
-    {printf("%d",b);}
-
-    else{
-        for(i=3,i<=n;i++){
-            c=a+b;
-            a=b;
-            b=c;
-        }
-        printf("%d",c);
-    }    
+        c=a+b;
+        a=b;
+        b=c;
+       
+    }
+    printf("%d",c);
     return 0;
-
 }

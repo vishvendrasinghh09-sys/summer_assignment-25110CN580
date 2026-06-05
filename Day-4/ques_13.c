@@ -9,7 +9,7 @@ int main()
     for(i=3;i<=n;i++)
     {
         c=a+b;
-        printf("%d",c);
+        printf("%d",a);
         a=b;
         b=c;
 
